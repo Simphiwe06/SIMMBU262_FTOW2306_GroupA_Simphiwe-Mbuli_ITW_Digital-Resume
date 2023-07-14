@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkgray;
+    font-weight: lighter;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.hero {
+    background-color: dimgray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+header {
+    background-color: rosybrown;
+    padding: 20px;    
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    height: 230px;
+    width: 100%;
+}
+
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 20px;
+    color: dimgray;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+
+header p a {
+    color: gray
+}
+
+section {
+    padding: 20px;
+}
+
+aside img {
+    max-width: 30%;
+    height: auto;
+}
+
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+article {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 98%;
+
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: cadetblue;
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: small;
+}
+
+form input,
+form textarea {
+    width:50% ;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: dimgray;
+    padding: 20px;
+    text-align: center;
+    height: max-content;
+    font-size: smaller;
+    margin-top: 100px;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+footer a {
+    color: navy;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+
+    aside img {
+        max-width: 100%;
+    }
+
+ 
+    article {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    aside {
+        margin-left: 20px;
+    }
+
+    aside img {
+        max-width: 75%;
+    }
+
+    article {
+        padding: 40px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    aside {
+        margin-left: 40px;
+    }
+
+    aside img {
+        max-width: 50%;
+    }
+
+
+    article {
+        padding: 60px;
+    }
+
+    footer {
+        padding: 60px;
+    }
+}
+
